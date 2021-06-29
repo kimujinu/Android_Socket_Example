@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">question_and_answer</string>
+
+    <string name="username_hint">닉네임을 입력해주세요.</string>
+    <string name="entered_button">입장</string>
+    <string name="sent_button">전송</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "559057299170",
+    "project_id": "questionandanswer-73d6d",
+    "storage_bucket": "questionandanswer-73d6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559057299170:android:cb6b6c5e3f29884416a0bb",
+        "android_client_info": {
+          "package_name": "com.example.question_and_answer.view"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559057299170-81rj3bm786ntif119q5dlprviq4kudgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.question_and_answer.view",
+            "certificate_hash": "6349e7457f20e61168d52f53cf6081d5b829f6ae"
+          }
+        },
+        {
+          "client_id": "559057299170-i8v98natcdf5f2r4f75nmlv2409sul6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfBaITSzuEhTRdizluCx4HqEMdehVx_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559057299170-i8v98natcdf5f2r4f75nmlv2409sul6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
