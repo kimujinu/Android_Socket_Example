@@ -1,7 +1,6 @@
 package com.example.question_and_answer.view
 
 import android.annotation.SuppressLint
-import android.graphics.ColorSpace.connect
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.MenuItem
@@ -9,20 +8,19 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.question_and_answer.R
 import com.example.question_and_answer.adapters.ChatMessageAdapter
+import com.example.question_and_answer.adapters.ChatMessageAdapter2
 import com.example.question_and_answer.base.ActivityBase
 import com.example.question_and_answer.common.Define
 import com.example.question_and_answer.databinding.ActivityChatMessageBinding
 import com.example.question_and_answer.models.ChatMessage
 import com.example.question_and_answer.viewModel.ChatMessageViewModel
 import io.socket.client.IO
-import io.socket.client.On.on
 import io.socket.client.Socket
 import io.socket.emitter.Emitter
 import kotlinx.android.synthetic.main.activity_chat_message.*
 import org.json.JSONException
 import org.json.JSONObject
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.net.URISyntaxException
 
 
 class ChatMessageActivity : ActivityBase<ActivityChatMessageBinding,ChatMessageViewModel>() {
@@ -33,7 +31,7 @@ class ChatMessageActivity : ActivityBase<ActivityChatMessageBinding,ChatMessageV
 
     var userName : String? = ""
     lateinit var mSocket: Socket
-    lateinit var mAdapter : ChatMessageAdapter
+    lateinit var mAdapter : ChatMessageAdapter2
 
 
     @SuppressLint("ResourceAsColor")
@@ -78,7 +76,7 @@ class ChatMessageActivity : ActivityBase<ActivityChatMessageBinding,ChatMessageV
     }
 
     private fun setupRecyclerView(){
-        mAdapter = ChatMessageAdapter(this)
+        mAdapter = ChatMessageAdapter2(this)
         val layoutManager = LinearLayoutManager(this)
         messagesView.setHasFixedSize(true)
         messagesView.layoutManager = layoutManager
